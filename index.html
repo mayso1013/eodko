@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <title>KakaoLink Test</title>
+
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <button onclick="sendLinkDefault()">카카오링크 보내기</button>
+
+    <script>
+
+      function sendLinkDefault() {
+
+        Kakao.init('fa6bab2324b7c885bfdee15dadd43689');
+
+        Kakao.Link.sendDefault({
+
+          objectType: 'feed',
+
+          content: {
+
+            title: '우는 이서현',
+
+            
+
+            imageUrl: 'https://mblogthumb-phinf.pstatic.net/MjAyMzA0MDlfMzYg/MDAxNjgxMDAxOTA0NTEw.8PEfBtveKtQbf_V1Ufas_9JXGcDQ1wqaVAwrUmq6kBAg.Np6zsUtymChxYUXQo6S_HHZNwsF0_fueasOrF4K7-dcg.PNG.co755746/%EB%AC%B4%EC%A0%9C117%EF%BC%BF20230409095539.png?type=w800',
+
+            link: {
+
+              mobileWebUrl: 'https://mayso1013.github.io/gift_006/',
+
+              webUrl: 'https://mayso1013.github.io/gift_006/',
+
+            },
+
+          },
+
+        });
+
+      }
+
+    </script>
+
+  </body>
+
+</html>
+
